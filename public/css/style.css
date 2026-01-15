@@ -1,0 +1,12 @@
+
+        li a { text-decoration: none; color: #2980b9; font-weight: bold; }
+        li a:hover { color: #3498db; text-decoration: underline; }
+        li { margin-bottom: 10px; list-style: none; }
+        button { cursor: pointer; margin-left: 5px; }
+        ul { padding: 0; }
+        li { display: flex; align-items: center; background: white; margin-bottom: 12px; padding: 15px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eee; }
+        .puesto { font-size: 1.4em; font-weight: bold; min-width: 45px; text-align: center; color: #7f8c8d; }
+        strong { font-size: 1.2em; flex-grow: 1; margin-left: 10px; }
+        .votos-tag { background: #fff3e0; color: #e67e22; padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 0.9em; margin-right: 15px; }
+        .acciones button { padding: 8px 12px; border-radius: 8px; border: none; cursor: pointer; margin-left: 5px; transition: transform 0.2s; }
+        .acciones button:hover { transform: scale(1.1); }

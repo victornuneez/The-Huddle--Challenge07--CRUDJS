@@ -1,0 +1,22 @@
+{
+  "name": "crudjs07",
+  "version": "1.0.0",
+  "description": "Proyecto Challenge 07: CRUD de cursos usando Node.js, Express, EJS y PostgreSQL",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": ["nodejs", "express", "ejs", "postgresql", "pg", "crud"],
+  "author": "Victor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "ejs": "^3.1.10",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

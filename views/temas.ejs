@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge CRUD</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1><%= titulo %></h1>
+    <form action="/temas/crear" method="POST">
+        <input type="text" name="nombreDelTema" placeholder="Escribí un tema nuevo" required>
+        <input type="url" name="enlaceDelTema" placeholder="https://ejemplo.com" required>
+        <button type="submit">Agregar Tema</button>
+    </form>
+    <hr>
+    <ul>
+        <% temas.forEach(function(t, indice) { %>
+        <li>
+            <span class="puesto">
+                <% if (indice === 0) { %> 🥇
+                <% } else if (indice === 1) { %> 🥈
+                <% } else if (indice === 2) { %> 🥉
+                <% } else { %> <%= indice + 1 %> <% } %>
+            </span>
+            <a href="<%= t.enlace %>" target="_blank">
+                <strong><%= t.titulo %></strong>
+            </a>
+            <span class="votos-tag">🔥 <%= t.votos %> votos</span>
+            <div class="acciones">
+                <a href="/temas/votar/<%= t.id %>"><button>👍</button></a>
+                <a href="/temas/editar/<%= t.id %>"><button class="btn-editar">✏️</button></a>
+                <a href="/temas/eliminar/<%= t.id %>"><button class="btn-borrar">🗑</button></a>
+            </div>
+        </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
